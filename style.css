@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.registerContainer {
+    height: 100vh;
+    width: 100%;
+    background-color: #bebeff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formContainer {
+    height: 90%;
+    width: 90%;
+    background: linear-gradient(to bottom, #6e6e6e, #afafaf);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+
+    width: 50%;
+    padding: 10px;
+    /* background-color: chartreuse; */
+}
+
+.parentCol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .caption {
+    font-weight: 500;
+    margin-bottom: 3px;
+}
+
+.form input {
+    border-radius: 3px;
+}
+
+.form input[type=text] {
+    padding: 4px;
+    width:120%;
+}
+
+.form input[type=datetime] {
+    padding: 4px;
+    width:120%;
+}
+
+.form #age {
+    padding: 4px;
+    max-width:30%;
+}
+
+.qualifChecks {
+    /* width: 100%; */
+}
+
+.btn {
+    height: 40px;
+    width: 120px;
+    background: linear-gradient(135deg, #444, #fff);
+    border-radius: 5px;
+}
+
+.btn a {
+    color: black;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+
+@media(max-width:960px) {
+    .parentCol {
+        display: flex;
+        flex-direction: column;
+        align-items: inherit;
+    }
+
+    .fourthCol {
+        flex-direction: column-reverse;
+    }
+
+    .btn {
+        margin-top: 25px;
+    }
+}
+
+@media(max-width:700px) {
+    .form input[type=text] {
+        width:100%;
+    }
+    
+    .form input[type=datetime] {
+        width:100%;
+    }
+
+    .form {
+        width: 75%;
+    }
+}
+
+@media(max-width:500px) {
+    .form {
+        width: 90%;
+    }
+
+    .formContainer {
+        height: 97%;
+        width: 97%;
+    }
+}
+
+@media(max-width:420px) {
+    .form {
+        width: 96%;
+    }
+}
+
+@media(max-width:400px) {
+    .form {
+        width: 98%;
+        padding: 8px;
+    }
+
+    .formContainer {
+        padding: 8px;
+    }
+
+}
